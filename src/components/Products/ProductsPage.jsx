@@ -1,12 +1,12 @@
 import React from 'react'
 import './ProductsPage.css'
-import ProductsSideBar from './ProductsSideBar'
+import ProductsSidebar from './ProductsSidebar'
 import ProductsList from './ProductsList'
 
 const ProductsPage = () => {
   return (
     <section className='products-page'>
-        < ProductsSideBar/>
+        < ProductsSidebar/>
         < ProductsList />
 
     </section>

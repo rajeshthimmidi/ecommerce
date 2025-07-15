@@ -4,7 +4,7 @@ import NavLinkWithIcon from '../NavLinkWithIcon'
 import useData from '../Hooks/useData'
 import config from '../../config.json'
 
-const ProductsSideBar = () => {
+const ProductsSidebar = () => {
 
   const {  data: categories, error } = useData('/category');
 
@@ -30,4 +30,4 @@ const ProductsSideBar = () => {
   )
 }
 
-export default ProductsSideBar
+export default ProductsSidebar
