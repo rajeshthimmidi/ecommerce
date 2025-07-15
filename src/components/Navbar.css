@@ -1,0 +1,129 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* allow vertical expansion */
+    padding: 16px 40px;
+    background-color: white;
+    flex-wrap: wrap; /* enable wrapping */
+    row-gap: 12px;
+}
+
+.navbar_container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navbar_title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.navbar_form {
+    width: 450px;
+    height: 40px;
+    padding: 3px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.navbar_search {
+    flex: 1;
+    padding: 0 7px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.navbar_button {
+    height: 100%;
+    padding: 0 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: rgb(176, 163, 15);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar_button:hover {
+    background-color: #bfa713;
+}
+
+.navbar_links {
+    display: flex;
+    flex-wrap: wrap; /* enable wrap */
+    gap: 10px 16px; /* row-gap column-gap */
+    align-items: center;
+    font-size: 20px;
+}
+
+.navbar_links > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #222;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    font-size: 20px;
+}
+
+.navbar_links > a:hover {
+    background-color: #f6f6f6;
+}
+
+.navbar_links > a.active {
+    font-weight: 600;
+    color: #000;
+}
+
+.link_emoji {
+    width: 25px;
+    height: 25px;
+    margin-right: 6px;
+}
+
+.cart_count {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(109, 45, 237);
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sidebar styling if used elsewhere */
+.sidebar-link {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 21px;
+    transition: all 0.15s ease-in-out;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.sidebar-link:hover {
+    background-color: #f6f6f6;
+}
+
+.sidebar-link img {
+    width: 30px;
+    margin-left: 0px;
+    margin-right: 8px;
+}

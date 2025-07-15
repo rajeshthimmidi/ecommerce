@@ -1,0 +1,8 @@
+.products-page{
+    display: grid;
+    grid-template-columns: 0.8fr 4.2fr;
+    padding: 20px;
+}
+
+
+

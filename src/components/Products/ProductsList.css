@@ -1,0 +1,46 @@
+.products-list-section {
+    padding:10px;
+    padding-left: 30px;
+}
+
+.products-list-header{
+    justify-content: space-between;
+}
+
+.products-list-header h2 {
+    font-size: 26px;
+}
+
+.products-sort {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.products-sort:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/* Optional: Basic styling for <option> (limited browser support) */
+.products-sort option {
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
