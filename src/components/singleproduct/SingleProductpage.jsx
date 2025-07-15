@@ -1,6 +1,6 @@
 import React, { useContext,useState } from 'react'
 import { useParams } from 'react-router-dom'
-import './SingleProductpage.css'
+import './SingleProductPage.css'
 import Quantityinput from './Quantityinput';
 import useData from '../Hooks/useData';
 import CartContext from '../../contexts/CartContext';
