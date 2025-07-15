@@ -6,7 +6,7 @@ const ProtectedRoute = () => {
     const getuser = () => {
         return localStorage.getItem('token');
     }
-    console.log(getuser());
+    // console.log(getuser());
 
  return getuser() ? <Outlet /> : <Navigate to="/login" replace />;  
 }

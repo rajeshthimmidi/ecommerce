@@ -47,7 +47,7 @@ const ProductsList = () => {
       const {scrollTop, scrollHeight, clientHeight} = document.documentElement;
 
       if (scrollTop + clientHeight >= scrollHeight - 1) {
-        console.log('Reached the bottom of the page');
+        // console.log('Reached the bottom of the page');
         setPage(prevPage => prevPage + 1);
       }
     };

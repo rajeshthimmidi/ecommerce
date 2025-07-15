@@ -5,6 +5,7 @@ import Quantityinput from './Quantityinput';
 import useData from '../Hooks/useData';
 import CartContext from '../../contexts/CartContext';
 import UserContext from '../../contexts/userContext';
+import config from '../../config.json';
 
 const SingleProductpage = () => {
 
@@ -23,7 +24,7 @@ const SingleProductpage = () => {
         {product && <><div className='align-center'>
             <div className="single-product-thumbnail">
                 {product?.images && product.images.map((image, index) => (
-                    <img key={index} src={`http://localhost:5000/products/${image}`} 
+                    <img key={index} src={`${config.backendURL}/products/${image}`} 
                     alt={`Product Image ${index + 1}`} 
                     onClick={() => setSelectedImage(index)} 
                     className= {selectedImage === index ? 'selected-image' : ''}
@@ -32,7 +33,7 @@ const SingleProductpage = () => {
             </div>
             <img
               className="single-product-display"
-              src={product?.images ? `http://localhost:5000/products/${product.images[selectedImage]}` : null}
+              src={product?.images ? `${config.backendURL}/products/${product.images[selectedImage]}` : null}
               alt={product?.title || 'Product'}
             />
         </div>

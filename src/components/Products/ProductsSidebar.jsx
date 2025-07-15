@@ -1,8 +1,8 @@
 import React from 'react'
 import './ProductsSidebar.css'
 import NavLinkWithIcon from '../NavLinkWithIcon'
-import apiClient from '../utils/api-client'
 import useData from '../Hooks/useData'
+import config from '../../config.json'
 
 const ProductsSideBar = () => {
 
@@ -18,7 +18,7 @@ const ProductsSideBar = () => {
                 <NavLinkWithIcon 
                   title={category.name} 
                   link={`/products?category=${category.name}`} 
-                  emoji={`http://localhost:5000/category/${category.image}`}
+                  emoji={`${config.backendURL}/category/${category.image}`}
                   sidebar={true}
                 />
               </div>

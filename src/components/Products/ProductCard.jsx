@@ -3,19 +3,20 @@ import './ProductCard.css';
 import iphoneImage from '../../assets/iphone.jpg';
 import basket from '../../assets/basket.png'
 import star from '../../assets/white-star.png'
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';         
 import CartContext from '../../contexts/CartContext';
 import UserContext from '../../contexts/userContext';
+import config from '../../config.json';
 
 const ProductCard = ({product}) => {
       const {addToCart} = useContext(CartContext);
       const user = useContext(UserContext);
-      console.log(product);
+    //   console.log(product);
   return (
     <article className='product-card'>
         <div className='product-image'>
             <NavLink to={`/product/${product?._id}`}>
-                <img src={`http://localhost:5000/products/${product?.images[0]}`} alt='Product' /></NavLink>
+                <img src={`${config.backendURL}/products/${product?.images[0]}`} alt='Product' /></NavLink>
         </div>
 
         <div className='product-details'>

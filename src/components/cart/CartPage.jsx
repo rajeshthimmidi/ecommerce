@@ -2,6 +2,7 @@ import React, { useEffect,useContext } from 'react'
 import './CartPage.css'
 import remove from '../../assets/remove.png'
 import Table from '../common/Table'
+import config from '../../config.json'
 
 import Quantityinput from '../singleproduct/Quantityinput'
 import UserContext from '../../contexts/userContext'
@@ -43,7 +44,7 @@ const CartPage = () => {
     return (
         <section className="align-center cart-page">
             <div className="align-center user-info">
-                <img src={`http://localhost:5000/profile/${user?.profilePic}`} alt="User" className="user-image" />
+                <img src={`${config.backendURL}/profile/${user?.profilePic}`} alt="User" className="user-image" />
                 <div className="user-details">
                 <p className="user-name">Name : {user?.name}</p>
                 <p className="user-mail">Email : {user?.email}</p>

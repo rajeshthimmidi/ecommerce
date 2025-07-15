@@ -46,7 +46,7 @@ const App = () => {
  
        addToCartAPI(product._id, quantity)
        .then(res=> {
-         console.log(res);
+        //  console.log(res);
          toast.success('Product added to cart successfully!');
        })
        .catch(error => {
