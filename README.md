@@ -4,3 +4,10 @@
   </a>
 </p>
 
+
+### 🧑‍💻 Demo Credentials
+Use the following credentials to explore the application without signing up:
+
+- **Email:** `rajesh@gmail.com`  
+- **Password:** `Rajesh`
+
